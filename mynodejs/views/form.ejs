@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Sample Node.js</title>
+</head>
+<body>
+  <h1>My Sample Node.js</h1>
+  <form action="/products/add" method="POST">
+    <label for="name">Enter Product Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="desc">Enter Product Description:</label>
+    <input type="text" id="desc" name="desc" required><br><br>
+    <label for="quantity">Enter Product Quantity:</label>
+    <input type="text" id="quantity" name="quantity" required><br><br>
+    <label for="price">Enter Product Price:</label>
+    <input type="text" id="price" name="price" required><br><br>
+    <label for="cat">Created At:</label>
+    <input type="datetime-local" id="cat" name="cat" required><br><br>
+    <label for="uat">Updated At:</label>
+    <input type="datetime-local" id="uat" name="uat" required><br><br>
+    <button type="submit">Add Product</button>
+  </form>
+  <p><a href="/">Go back to Home</a></p>
+</body>
+</html>

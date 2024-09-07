@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1>My Sample Node.js</h1>
+  <h2>Products</h2>
+  <% if (myproduct.length > 0) { %>
+    <ul>
+      <% myproduct.forEach(product => { %>
+        <li>
+          <strong>Name:</strong> <%= product.name %><br>
+          <strong>Description:</strong> <%= product.desc %><br>
+          <strong>Quantity:</strong> <%= product.quantity %><br>
+          <strong>Price:</strong> <%= product.price %><br>
+          <strong>Created At:</strong> <%= product.cat %><br>
+          <strong>Updated At:</strong> <%= product.uat %><br>
+          <a href="/products/delete/<%= product.name %>">Delete</a>
+        </li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p>No Product added yet.</p>
+  <% } %>
+  <p><a href="/products/add">Add Another Product</a></p>
+  <p><a href="/">Go back to Home</a></p>
+</body>
+</html>
